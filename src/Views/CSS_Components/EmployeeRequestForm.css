@@ -1,0 +1,81 @@
+* {
+    font-family:'Lucida Sans Regular';
+}
+/* -----------MAIN CONTAINER-------------*/
+.EmployeeRequestFormContainer {
+    width: 100% !important;
+    height: 100% !important;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows:81px 20% 1fr;
+}
+/* ---------------BREAK------------------ */
+
+
+/* ---------------FORM TITLE-------------- */
+.FormTitle {
+    background-color: rgba(170, 161, 161, 0.2);
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    box-shadow: 0 0 2px gray;
+}
+
+.FormTitle img {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.FormTitle p {
+    margin: 0;
+    padding: 0;
+    font-size: 31px;
+    color: #333;
+    justify-self: left;
+    width: fit-content;
+    height:fit-content;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* -----------------BREAK----------------- */
+
+
+/*----------------FILTER AREA------------------ */
+
+.FilterArea {
+    display: block;
+}
+
+.FormGroups {
+    display: block;
+    width: 300px;
+    height: 77px;
+    margin-left: 25px;
+    margin-top: 15px;
+
+}
+
+.FormGroups label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.FormGroups input {
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px gray;
+
+    margin-top: 10px;
+
+    width: 296px !important;
+    height: 38px;
+}

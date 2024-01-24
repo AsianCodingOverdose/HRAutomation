@@ -1,0 +1,127 @@
+.SideNavBarContainer{
+    position:inherit;
+
+    width: 250px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+    transition: ease 1s;
+}
+
+.SideNavBarContainerHide {
+
+    width: 250px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+    transition: ease 1s;
+    transform: translateX(-250px);
+}
+
+/* SIDENAVBAR USER PROFILE IMAGE AND NAME CSS */
+
+.SideNav-User {
+    width: auto;
+    height: 190px;
+
+    border-bottom: solid 1px;
+    border-color: #e5e5e5;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 60px;
+}
+
+.Profile_Icon {
+
+    position: relative;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.Name_Role {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.FullName {
+    font-weight: bold;
+}
+
+.Role {
+    color: #333;
+}
+
+.Name_Role p {
+    margin: 0;
+    padding: 0;
+}
+
+.Role {
+    text-align: center;
+}
+
+/*  */
+
+.SideNavBarContainer li, .SideNavBarContainerHide li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #818181;
+}
+
+.SideNavBarContainer li ul , .SideNavBarContainerHide li ul{
+    box-sizing: border-box;
+    width: auto;
+    height: 53px;
+    padding: 0;
+    margin: 0;
+
+    letter-spacing: 1px;
+
+    display: grid;
+
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr;
+}
+
+.SideNavBarContainer li ul img, .SideNavBarContainerHide li ul img {
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+.SideNavBarContainer li ul p, .SideNavBarContainerHide li ul p{
+
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    position: relative;
+    max-width: fit-content;
+    height: fit-content;
+    font-size: 14.4px;
+}
+
+.SideNavBarContainer li ul p:hover , .SideNavBarContainerHide li ul p:hover{
+
+    cursor: pointer;
+}
+
+
+.SideNavBarContainer li ul:hover , .SideNavBarContainerHide li ul:hover {
+    background-color: gray;
+    color: white;
+    transition: ease .3s;
+    cursor: pointer;
+}

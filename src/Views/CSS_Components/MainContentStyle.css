@@ -1,0 +1,49 @@
+
+/* MainContentContainer CSS */
+
+.MainContentContainer {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    margin: 0;
+    padding: 0;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+.MainContent_Inner {
+
+    display: grid;
+
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr;
+    transition: ease 1s;
+}
+
+.MainContent_Inner_Hide {
+    display: grid;
+
+    grid-template-columns: 0 1fr;
+    grid-template-rows: 1fr;
+    transition: ease 1s;
+}
+
+/* MAIN CONTENT PROFILE CSS */
+
+.MainContentProfileContainer {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.MainContentProfileInner {
+    height: 100%;
+    box-shadow: 0px 0px 2px #dedede,
+                0px 0px 4px #dedede,
+                0px 1px 6px #dedede;
+
+}

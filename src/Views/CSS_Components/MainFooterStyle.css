@@ -1,0 +1,16 @@
+footer {
+    width: 100vw;
+    height: 66px;
+    background-color: #ed3b3b;  
+
+    text-align: center;
+    align-items: center;
+
+    padding-top: 10px;
+
+    box-sizing: border-box;
+}
+
+footer p {
+    color: white;
+}
