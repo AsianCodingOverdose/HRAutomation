@@ -20,7 +20,7 @@ const MainContent = (props) => {
                 <div className="MainContentProfileContainer">
                     <div className="MainContentProfileInner">
 
-                        <EmployeeRequestForm></EmployeeRequestForm>
+                        <EmployeeRequestForm />
                         
                     </div>
                 </div>

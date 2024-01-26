@@ -1,8 +1,13 @@
 import React from "react"
 import '../CSS_Components/EmployeeRequestForm.css';
-import { FormGroup , FormLabel , Field} from 'react-bootstrap';
+import ManualForms from "./ManualForms";
+import { Table } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const EmployeeRequestForm = () => {
+
+    const options = [ {value: "Test1", label: "Test1Label"},
+                      {value: "Test2", label: "Test1Label2"}];
 
     return (
             <div className="EmployeeRequestFormContainer">
@@ -11,17 +16,45 @@ const EmployeeRequestForm = () => {
                     <p>EMPLOYMENT REQUEST FORM</p>
                 </div>
                 <div className="FilterArea">
-                    <form className="FilterGroupContainer">
-                        <div className="FormGroups">
-                            <label>Requestor Name</label>
-                            <input type="text" placeholder="Employee Name"></input>
-                        </div>
-                    </form>
-                    <FormGroup key={1} className='FormGroup1test'>
-                    <FormLabel >Test</FormLabel >
-                    </FormGroup>
+                    <ManualForms Selection={1} TextLabel={"Requestor's name"} FormType={'text'} Placeholder={'Employee Name'}/>
+                    <ManualForms Selection={2} TextLabel={"No. Of Headcount"} Placeholder={'No. Of Headcount'} Options={options}/>
+
+                    <hr/>
                 </div>
                 <div className="TableArea">
+                <Table bordered hover>
+                    <thead>
+                        <tr>
+                        <th>Requestor's Name</th>
+                        <th>No. of Headcount</th>
+                        <th>Job Title</th>
+                        <th>Date of Request</th>
+                        <th>Status</th>
+                        <th>Approver</th>
+                        <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        </tr>
+                        <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        </tr>
+                        <tr>
+                        <td>3</td>
+                        <td colSpan={2}>Larry the Bird</td>
+                        <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </Table>
                 </div>
             </div>
     )

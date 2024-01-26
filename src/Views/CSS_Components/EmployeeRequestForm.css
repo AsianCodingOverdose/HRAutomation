@@ -1,6 +1,7 @@
 * {
-    font-family:'Lucida Sans Regular';
+    font-family:'Roboto',sans-serif;
 }
+
 /* -----------MAIN CONTAINER-------------*/
 .EmployeeRequestFormContainer {
     width: 100% !important;
@@ -9,7 +10,7 @@
     display: grid;
 
     grid-template-columns: 1fr;
-    grid-template-rows:81px 20% 1fr;
+    grid-template-rows:81px 184px 1fr;
 }
 /* ---------------BREAK------------------ */
 
@@ -52,30 +53,8 @@
 
 .FilterArea {
     display: block;
+    position: static;
+
+    padding: 20px 15px;
 }
 
-.FormGroups {
-    display: block;
-    width: 300px;
-    height: 77px;
-    margin-left: 25px;
-    margin-top: 15px;
-
-}
-
-.FormGroups label {
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.FormGroups input {
-    border-style: none;
-    border-radius: 5px;
-    box-shadow: 0 0 2px gray;
-
-    margin-top: 10px;
-
-    width: 296px !important;
-    height: 38px;
-}
